@@ -1,0 +1,36 @@
+.navbar {
+	margin-bottom: 15px;
+}
+
+.header {
+	font-size: 32px;
+  width: 100%;
+  border: 1px solid #ACBDBA;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  min-width: 700px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  margin: 10px;
+  color: #000807;
+}
+
+#link {
+	content: '';
+	height: 1px;
+	width: 0;
+	border-bottom: 0px solid transparent; 
+	transition: 0.5s ease;
+}
+
+#link:hover {
+	border-bottom: 1px solid #000807;
+}
+
+.active {
+	border-bottom: 1px solid #000807 !important;
+}

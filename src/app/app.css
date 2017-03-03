@@ -1,0 +1,58 @@
+body {
+  color: #000807;
+  margin-top: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-title {
+  color: #6a1f82;
+  font-size: 24px;
+}
+
+.switch-header {
+  padding-bottom: 10px;
+  color: #000807;
+}
+
+.switch-header-text {
+  display: inline-block;
+  color: #6a1f82;
+}
+
+.view-switch {
+  display: inline-block;
+  content: '';
+  height: 18px;
+  border-bottom: 0px solid transparent; 
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.view-switch:hover {
+  border-bottom: 1px solid #000807;
+}
+
+.active {
+  border-bottom: 1px solid #000807 !important;
+}
+
+img {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
