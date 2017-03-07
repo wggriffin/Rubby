@@ -6,7 +6,6 @@ import Video from '../video/video-component';
 
 class ItemDispatcher extends Component {
 	render() {
-		console.log(this.props);
 		let component;
 		if(this.props.type === 'music') {
 			component = <Song {...this.props} />;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './app.css';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import AppContainer from './app-container-component';
 import AppMainContainer from './app-main-container-component';
@@ -23,7 +23,7 @@ class App extends Component {
       }
     });
     return (
-      <Router history={browserHistory}>
+      <Router history={hashHistory}>
         <Route path='/' component={AppContainer}>
           {homeIndexRouteComponent}
         </Route>

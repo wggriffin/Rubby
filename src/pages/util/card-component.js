@@ -2,26 +2,14 @@ import React, { Component } from 'react';
 
 class Card extends Component {
 	render() {
-		const headerText = this.props.currentItem.props.headerText;
-		let headerContents;
-		if(this.props.view === 'slideshow' && this.props.itemCount > 1) {
-			headerContents = 
-					(<div className="slideshow-header">
-						<div className="prev" onClick={(e) => this.props.handleClick(e, -1)} >&#10094;</div>
-							<div className="header-text">
-								{headerText}
-							</div>
-		  			<div className="next" onClick={(e) => this.props.handleClick(e, 1)} >&#10095;</div>
-		  		</div>);
-		} else {
-			headerContents =
-				(<div className="header-text">
-						{headerText}
-				 </div>);
-		}
+		const headerText = (this.props.currentItem) 
+													? this.props.currentItem.props.headerText
+													: this.props.headerText;
 		return (
 			<div className={this.props.type + " slideshow card"}>
-				{headerContents}
+				<div className="header-text">
+					{headerText}
+				</div>
 				{this.props.currentItem}
 			</div>
 		);

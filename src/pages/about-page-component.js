@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+import Card from './util/card-component';
+
+var aboutText = 'Rubby is an artist, musician......';
+
 class AboutPage extends Component {
 	render() {
 		return (
-			<div className='page-title'>
-				About
-			</div>
+			<Card headerText='About' currentItem={aboutText} />
 		);
 	}
 }

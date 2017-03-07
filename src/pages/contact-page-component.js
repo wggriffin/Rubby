@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
+import Card from './util/card-component';
+
 class ContactPage extends Component {
 	render() {
 		return (
-			<div className='page-title'>
-				Contact
-			</div>
+			<Card headerText='Contact' currentItem={""} />
 		);
 	}
 }

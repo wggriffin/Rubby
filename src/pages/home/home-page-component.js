@@ -10,7 +10,7 @@ class Home extends Component {
 			<div className='home-page'>
 				<Link className='home-image-link' to='/main'>
 					<img className='home-image' 
-							 src='../images/image2.jpg' 
+							 src='./images/image2.jpg' 
 							 alt='home' />
 				</Link>
 				<Link className='home-header' to='/main'>Enter</Link>

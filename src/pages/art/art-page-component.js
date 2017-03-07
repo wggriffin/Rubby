@@ -9,10 +9,8 @@ class Art extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {view: 'gallery'};
-		var count = 1;
-		const len = images.length;
 		images.forEach((image) => {
-			image.headerText = count++ + "/" + len;
+			image.headerText = "";
 		});
 		this.handleClick = this.handleClick.bind(this);
 	}

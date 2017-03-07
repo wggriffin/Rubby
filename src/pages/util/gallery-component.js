@@ -12,7 +12,6 @@ class Gallery extends Component {
 						 			    key={key++} 
 						 			  	type={this.props.type} />
 		);
-		console.log(this.components);
 		this.state = {itemNum: 0};
 	}
 

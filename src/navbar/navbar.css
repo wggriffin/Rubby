@@ -3,14 +3,14 @@
 }
 
 .header {
+  width: 90%;
 	font-size: 32px;
-  width: 100%;
   border: 1px solid #ACBDBA;
   vertical-align: middle;
+  margin: auto;
   margin-top: 10px;
   margin-bottom: 15px;
   white-space: nowrap;
-  min-width: 700px;
 }
 
 .navbar-link {
